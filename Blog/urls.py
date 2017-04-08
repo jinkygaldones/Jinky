@@ -5,7 +5,7 @@ from django.contrib import admin
 
 urlpatterns = [
         url(r'^admin/', admin.site.urls),
-        url(r'', include("news.urls", namespace='news')),
+        url(r'^news/', include("news.urls", namespace='news')),
 ]
 
 if settings.DEBUG:
